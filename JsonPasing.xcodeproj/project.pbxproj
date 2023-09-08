@@ -13,6 +13,8 @@
 		E3E1E8BA2AAB91EE00308377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E1E8B82AAB91EE00308377 /* Main.storyboard */; };
 		E3E1E8BC2AAB91F000308377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E1E8BB2AAB91F000308377 /* Assets.xcassets */; };
 		E3E1E8BF2AAB91F000308377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E1E8BD2AAB91F000308377 /* LaunchScreen.storyboard */; };
+		E3E1E8C72AAB925A00308377 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E1E8C62AAB925A00308377 /* Posts.swift */; };
+		E3E1E8CA2AAB9D5500308377 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E1E8C92AAB9D5500308377 /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E3E1E8BB2AAB91F000308377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3E1E8BE2AAB91F000308377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3E1E8C02AAB91F000308377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3E1E8C62AAB925A00308377 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		E3E1E8C92AAB9D5500308377 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		E3E1E8B12AAB91EE00308377 /* JsonPasing */ = {
 			isa = PBXGroup;
 			children = (
+				E3E1E8C82AAB926600308377 /* Models */,
+				E3E1E8CB2AABAC2B00308377 /* ViewControllers */,
+				E3E1E8CD2AABACD400308377 /* Storyboards */,
+				E3E1E8CC2AABACC200308377 /* App */,
+				E3E1E8BB2AAB91F000308377 /* Assets.xcassets */,
+			);
+			path = JsonPasing;
+			sourceTree = "<group>";
+		};
+		E3E1E8C82AAB926600308377 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3E1E8C62AAB925A00308377 /* Posts.swift */,
+				E3E1E8C92AAB9D5500308377 /* Alerts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3E1E8CB2AABAC2B00308377 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3E1E8B62AAB91EE00308377 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E3E1E8CC2AABACC200308377 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				E3E1E8B22AAB91EE00308377 /* AppDelegate.swift */,
 				E3E1E8B42AAB91EE00308377 /* SceneDelegate.swift */,
-				E3E1E8B62AAB91EE00308377 /* ViewController.swift */,
-				E3E1E8B82AAB91EE00308377 /* Main.storyboard */,
-				E3E1E8BB2AAB91F000308377 /* Assets.xcassets */,
 				E3E1E8BD2AAB91F000308377 /* LaunchScreen.storyboard */,
 				E3E1E8C02AAB91F000308377 /* Info.plist */,
 			);
-			path = JsonPasing;
+			path = App;
+			sourceTree = "<group>";
+		};
+		E3E1E8CD2AABACD400308377 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E3E1E8B82AAB91EE00308377 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E1E8B72AAB91EE00308377 /* ViewController.swift in Sources */,
+				E3E1E8CA2AAB9D5500308377 /* Alerts.swift in Sources */,
 				E3E1E8B32AAB91EE00308377 /* AppDelegate.swift in Sources */,
 				E3E1E8B52AAB91EE00308377 /* SceneDelegate.swift in Sources */,
+				E3E1E8C72AAB925A00308377 /* Posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ST79MDU446;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JsonPasing/Info.plist;
+				INFOPLIST_FILE = JsonPasing/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ST79MDU446;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JsonPasing/Info.plist;
+				INFOPLIST_FILE = JsonPasing/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
